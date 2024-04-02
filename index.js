@@ -10,9 +10,9 @@ function generateCards(data){
     const container = document.getElementById('image_container');
     for(let i = 0; i < data.length; i++) {
       const single_item = data[i];
-      const card        = document.createElement('div');
-      const anchor      = document.createElement('a');
-      const img         = document.createElement('img');
+      const card  = document.createElement('div');
+      const anchor = document.createElement('a');
+      const img = document.createElement('img');
   
       card.classList.add('item');
       anchor.href = `./detail.html?id=${single_item.id}`;
